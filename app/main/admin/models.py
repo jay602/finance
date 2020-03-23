@@ -35,7 +35,7 @@ class User(db.Model, UserMixin):
     username = db.Column(db.String(80), unique=True, nullable=False, comment=u'用户名')
     password_hash = db.Column(db.String(128), comment="加密密码")
     email = db.Column(db.String(120), unique=True, comment=u'email')
-    phone = db.Column(db.String(20), unique=True, comment=u'手机号码')
+    phone = db.Column(db.String(20), unique=True, comment=u'phone')
     avatar = db.Column(db.String(200), comment=u'头像')
     status = db.Column(db.Integer, default=1, comment=u'状态')
     lastLoginTime = db.Column(db.DATETIME, server_default=func.now(), comment=u'最后登录时间')

@@ -4,7 +4,7 @@ from functools import wraps
 from flask import session, request
 from app.main.admin.models import *
 
-def async(f):
+def async1(f):
     def wrapper(*args, **kwargs):
         thr = Thread(target=f, args=args, kwargs=kwargs)
         thr.start()
