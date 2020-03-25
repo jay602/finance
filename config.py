@@ -66,7 +66,7 @@ class ProductionConfig(Config):
     MAIL_USERNAME = '468647870@qq.com'
     MAIL_PASSWORD = 'kfbfznsqgzjqcbag'
 
-    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:123456@localhost:3306/finance?charset=utf8'
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:?Jay790118!@localhost:3306/finance?charset=utf8'
     # 设置是否在每次连接结束后自动提交数据库中的变动。
     SQLALCHEMY_COMMIT_ON_TEARDOWN = False
     # 数据库连接池的大小。默认是数据库引擎的默认值：5
